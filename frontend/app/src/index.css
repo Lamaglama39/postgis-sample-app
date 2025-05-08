@@ -1,0 +1,143 @@
+:root {
+    --main-bg: #181a1b;
+    --card-bg: #23272b;
+    --accent: #4f8cff;
+    --text-main: #f5f6fa;
+    --text-muted: #b0b3b8;
+    --border: #343a40;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background: var(--main-bg);
+    color: var(--text-main);
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.app,
+.container {
+    background: none;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title,
+h1,
+h5,
+h6 {
+    color: var(--text-main);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.btn-primary,
+.btn-outline-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--accent);
+    border: none;
+}
+
+.btn-outline-primary {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.address-info,
+.site-details,
+.site-address {
+    background: #22262a;
+    border-radius: 0.5rem;
+    color: var(--text-main);
+}
+
+.site-item {
+    cursor: pointer;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0.5rem;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+.site-item:hover,
+.site-item.active-site {
+    background: #2a2e32;
+}
+
+.site-details {
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.result-card {
+    margin-top: 24px;
+}
+
+#map {
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    border: 1px solid var(--border);
+}
+
+input.form-control {
+    background: #23272b;
+    color: var(--text-main);
+    border: 1px solid var(--border);
+}
+
+input.form-control:focus {
+    background: #23272b;
+    color: var(--text-main);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(79, 140, 255, 0.15);
+}
+
+::-webkit-input-placeholder {
+    color: var(--text-muted);
+}
+
+::-moz-placeholder {
+    color: var(--text-muted);
+}
+
+:-ms-input-placeholder {
+    color: var(--text-muted);
+}
+
+::placeholder {
+    color: var(--text-muted);
+}
+
+.app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.1;
+}
