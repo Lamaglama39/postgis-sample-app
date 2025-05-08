@@ -3,6 +3,9 @@
 最寄りの世界遺産を取得するウェブサイト。
 PostGIS の検証用アプリ。
 
+## アプリイメージ
+![アプリイメージ](./image/app-example.png)
+
 ## アーキテクチャ
 ![アーキテクチャ](./image/PostGIS-App.drawio.png)
 
