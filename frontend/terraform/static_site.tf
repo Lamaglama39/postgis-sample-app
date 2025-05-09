@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "static_site" {
-  bucket        = "${local.app_name}-static-site"
+  bucket_prefix = "${local.app_name}-s3"
   force_destroy = true
 
   tags = {
-    Name = "${local.app_name}-static-site"
+    Name = "${local.app_name}-s3"
   }
 }
 
